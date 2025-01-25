@@ -1,4 +1,11 @@
-# ai-agent-todo
+# AI Agent todo
+
+
+### Create TODO
+![](https://github.com/jitunayak/ai-agent-todo/blob/main/docs/snap1.png)
+
+## Search TODO
+![](https://github.com/jitunayak/ai-agent-todo/blob/main/docs/snap2.png)
 
 To install dependencies:
 
