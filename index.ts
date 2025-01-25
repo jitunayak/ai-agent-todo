@@ -121,7 +121,7 @@ while (true) {
       call.args as never
     );
 
-    console.log(" obseration : ", apiResponse);
+    console.log("observation : ", apiResponse);
     // Send the API response back to the model so it can generate
     // a text response that can be displayed to the user.
     const result2 = await chat.sendMessage([
