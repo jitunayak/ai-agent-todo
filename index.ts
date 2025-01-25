@@ -1,13 +1,6 @@
 import { eq, ilike } from "drizzle-orm";
-// import type { ChatCompletionMessageParam } from "openai/resources/index.mjs";
 import db from "./src/db";
 import { todoTable } from "./src/db/schema";
-
-console.log("Hello via Bun 1.2 🔥!");
-
-// const openai = new OpenAI({
-//   apiKey: process.env.OPENAI_API_KEY,
-// });
 
 import {
   GoogleGenerativeAI,
@@ -143,38 +136,4 @@ while (true) {
     // Log the text response.
     console.log("🤖 response : ", result2.response.text());
   }
-
-  // const chat = await openai.chat.completions.create({
-  //   model: "gpt-3.5-turbo",
-  //   messages: messages,
-  //   response_format: { type: "json_object" },
-  // });
-
-  // const result = chat.choices[0].message.content;
-  // messages.push({ role: "assistant", name: "assistant", content: result! });
-
-  // const action = JSON.parse(result!);
-  // if (action.type === "output") {
-  //   console.log("🤖 :" + action.output);
-  //   break;
-  // }
-  // if (action.type === "action") {
-  //   const tool = tools[action.function as keyof typeof tools];
-  //   if (!tool) {
-  //     console.log("Unknown tool: " + action.function);
-  //     break;
-  //   }
-  //   if (tool) {
-  //     const result = await tool(action.input as never);
-  //     const observationMsg = {
-  //       role: "observation",
-  //       content: JSON.stringify(result),
-  //     };
-  //     messages.push({
-  //       role: "developer",
-  //       content: JSON.stringify(observationMsg),
-  //     });
-  //   }
-  //   continue;
-  // }
 }
